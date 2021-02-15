@@ -1,12 +1,12 @@
 # Web大数据挖掘作业
 ## 目录
-作业一：Compute the PageRank scores on the Wikipedia dataset
+作业一：Compute the PageRank scores on the Wikipedia dataset  
 作业二：Predict the rating scores of the pairs (u, i) in the Test.txt file
 
 ## 写在前面
 1、如果需要作业细节，请联系作者获取。  
 2、作者联系方式(WeChat)：  
-![image](https://github.com/MIKUOOHASHI/IntelligentSoftwareTesting/blob/master/all_needed_images/Hello.png)
+![image](https://github.com/MIKUOOHASHI/WebBigDataMining/blob/main/all_needed_image/Hello.png)
 
 3、添加作者请备注来源(github)
 
@@ -33,21 +33,21 @@ In addition to the basic PageRank algorithm, you need to implement the Block-Str
 
 2 WikiData数据集说明
 2.1 数据总行数：103689
-![image]()
+![image](https://github.com/MIKUOOHASHI/WebBigDataMining/blob/main/all_needed_image/1.1.png)
 
 2.2 节点总数：7115
-![image]()
+![image](https://github.com/MIKUOOHASHI/WebBigDataMining/blob/main/all_needed_image/1.2.png)
 
 2.3 最大节点ID：8297
-![image]()
+![image](https://github.com/MIKUOOHASHI/WebBigDataMining/blob/main/all_needed_image/1.3.png)
 
 2.4 数据调用位置
-![image]()
+![image](https://github.com/MIKUOOHASHI/WebBigDataMining/blob/main/all_needed_image/1.4.png)
 
 3 关键代码细节
 3.1考虑dead ends和spider trap节点
 考虑到这两种情况下的节点，PageRank算法引入了随机浏览模型。定义阻尼因子α，代表了用户按照跳转链接来上网的概率，通常取一个固定值0.85，而 1- α = 0.15 则代表了用户不是通过跳转链接的方式来访问网页的。
-![image]()
+![image](https://github.com/MIKUOOHASHI/WebBigDataMining/blob/main/all_needed_image/1.5.png)
 
 3.2优化稀疏矩阵
 
@@ -57,16 +57,16 @@ In addition to the basic PageRank algorithm, you need to implement the Block-Str
 
 4 本机(Win10)运行截图
 4.1	alpha = 0.75，分为1块进行计算
-![image]()
+![image](https://github.com/MIKUOOHASHI/WebBigDataMining/blob/main/all_needed_image/1.6.png)
 
 ......
 
 5 云主机运行截图
-![image]()
+![image](https://github.com/MIKUOOHASHI/WebBigDataMining/blob/main/all_needed_image/1.7.png)
 
 6.	实验结果
 6.1 alpha取值相同，分块不同
-![image]()
+![image](https://github.com/MIKUOOHASHI/WebBigDataMining/blob/main/all_needed_image/1.8.png)
 
 ......
 
@@ -108,6 +108,6 @@ In this project, you need to report the predicted rating scores of the unknown p
 2)获取 user 之后，在训练集中得到每个 user 曾评分过的 items，它们是用于 计算预测分数的相似项； 
 
 5 实验结果
-![image]()
+![image](https://github.com/MIKUOOHASHI/WebBigDataMining/blob/main/all_needed_image/2.1.png)
 
 ......
