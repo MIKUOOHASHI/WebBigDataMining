@@ -73,22 +73,41 @@ In addition to the basic PageRank algorithm, you need to implement the Block-Str
 ---------------------------------------
 ## 作业二：
 ### 描述：
-Dataset: 
-        (1)Train.txt, which is used for training your models.
-        (2)Test.txt, which is used for test. 
-        (3)ItemAttribute.txt, which is used for training your models (optional).
-        (4)ResultForm.txt, which is the form of your result file.
-The formats of datasets are explained in the DataFormatExplanation.txt. 
+Dataset:   
+        (1)Train.txt, which is used for training your models.  
+        (2)Test.txt, which is used for test.   
+        (3)ItemAttribute.txt, which is used for training your models (optional).  
+        (4)ResultForm.txt, which is the form of your result file.  
+The formats of datasets are explained in the DataFormatExplanation.txt.   
 Note that if you can use ItemAttribute.txt appropriately and improve the performance of the algorithms, additional points (up to 10) can be added to your final course score. 
 
 ### 要求：
-In this project, you need to report the predicted rating scores of the unknown pairs (u, i) in the Test.txt file. You can use any algorithms you have learned from the course or from other resources (such as MOOC). 
-One group (consisting of at most two students) needs to write a report about this project. The report should include but not limited to the following contents:
+In this project, you need to report the predicted rating scores of the unknown pairs (u, i) in the Test.txt file. You can use any algorithms you have learned from the course or from other resources (such as MOOC). One group (consisting of at most two students) needs to write a report about this project. The report should include but not limited to the following contents:
 
-(1)Basic statistics of the dataset (e.g., number of users, number of ratings, number of items, etc); 
-(2)Details of the algorithms; 
-(3)Experimental results of the recommendation algorithms (RMSE, training time, space consumption); 
+(1)Basic statistics of the dataset (e.g., number of users, number of ratings, number of items, etc);   
+(2)Details of the algorithms;   
+(3)Experimental results of the recommendation algorithms (RMSE, training time, space consumption);   
 (4)Theoretical analysis or/and experimental analysis of the algorithms. 
         
 ### 实现细节：
+1 问题描述  
+利用 train.txt 文件给定的数据，根据不同用户对不同电影的已知评分，结合 协同过滤的思想，预测 test.txt 文件中用户对其他电影的可能评分。 
 
+2 实验原理
+协同过滤（Collaborative Filtering Recommendation）技术是推荐系统中应用 最早和最为成功的技术之一。协同过滤简单来说是利用某兴趣相投、拥有共同经 验之群体的喜好来推荐用户感兴趣的信息。它一般采用最近邻技术，利用用户的 历史喜好信息计算用户之间的距离，然后利用目标用户的最近邻居用户对商品评 价的加权评价值来预测目标用户对特定商品的喜好程度，系统从而根据这一喜好 程度来对目标用户进行推荐。 本次实验采用的是基于 item 的协同过滤算法。通过不同用户对不同 item 的 评分来评测 item 之间的相似性，基于 item 的相似性做推荐。 基于 item 的协同过滤算法主要分为两步：1）计算 item 之间的相似度；2） 根据 item 的相似度和用户的历史行为给用户生成推荐列表。因此，我们可以用 公式(2.1)定义 item 的相似度： 
+
+......
+
+3 数据集统计信息 
+经过对给定的 train.txt 和 test.txt 文件进行分析和统计，训练集 train.txt 和测 试集 test.txt 的相关统计信息分别如下所示。   
+1）训练集 训练集 train.txt 文件中所包含的用户数，评分记录以及项目数量等统计信息 如表所示。   
+2）测试集 测试集 test.txt 文件中所包含的用户数，评分记录以及项目数量等统计信息 如表所示。
+
+4 算法细节 
+1)读取磁盘上测试集 test.txt 文件，获取 user 和要预测 user 评分的 items；
+2)获取 user 之后，在训练集中得到每个 user 曾评分过的 items，它们是用于 计算预测分数的相似项； 
+
+5 实验结果
+![image]()
+
+......
