@@ -51,6 +51,7 @@ In addition to the basic PageRank algorithm, you need to implement the Block-Str
 3 关键代码细节
   3.1考虑dead ends和spider trap节点
   考虑到这两种情况下的节点，PageRank算法引入了随机浏览模型。定义阻尼因子α，代表了用户按照跳转链接来上网的概率，通常取一个固定值0.85，而 1- α = 0.15 则代表了用户不是通过跳转链接的方   式来访问网页的。
+  
   ![image](https://github.com/MIKUOOHASHI/WebBigDataMining/blob/main/all_needed_image/1.5.png)
 
   3.2优化稀疏矩阵
@@ -61,15 +62,18 @@ In addition to the basic PageRank algorithm, you need to implement the Block-Str
 
 4 本机(Win10)运行截图
   4.1	alpha = 0.75，分为1块进行计算
+  
   ![image](https://github.com/MIKUOOHASHI/WebBigDataMining/blob/main/all_needed_image/1.6.png)
 
 ......
 
 5 云主机运行截图
+
 ![image](https://github.com/MIKUOOHASHI/WebBigDataMining/blob/main/all_needed_image/1.7.png)
 
 6.	实验结果
   6.1 alpha取值相同，分块不同
+  
   ![image](https://github.com/MIKUOOHASHI/WebBigDataMining/blob/main/all_needed_image/1.8.png)
 
 ......
@@ -115,6 +119,5 @@ In this project, you need to report the predicted rating scores of the unknown p
 5 实验结果
 
 ![image](https://github.com/MIKUOOHASHI/WebBigDataMining/blob/main/all_needed_image/2.1.png)
-
 
 ......
