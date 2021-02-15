@@ -32,7 +32,7 @@ In addition to the basic PageRank algorithm, you need to implement the Block-Str
 ### 实现细节：
 1 算法简介：略
 
-2 WikiData数据集说明
+2 WikiData数据集说明  
   2.1 数据总行数：103689
   
   ![image](https://github.com/MIKUOOHASHI/WebBigDataMining/blob/main/all_needed_image/1.1.png)
