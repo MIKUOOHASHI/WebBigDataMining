@@ -48,8 +48,8 @@ In addition to the basic PageRank algorithm, you need to implement the Block-Str
   
   ![image](https://github.com/MIKUOOHASHI/WebBigDataMining/blob/main/all_needed_image/1.4.png)
 
-3 关键代码细节
-  3.1考虑dead ends和spider trap节点
+3 关键代码细节  
+  3.1考虑dead ends和spider trap节点  
   考虑到这两种情况下的节点，PageRank算法引入了随机浏览模型。定义阻尼因子α，代表了用户按照跳转链接来上网的概率，通常取一个固定值0.85，而 1- α = 0.15 则代表了用户不是通过跳转链接的方   式来访问网页的。
   
   ![image](https://github.com/MIKUOOHASHI/WebBigDataMining/blob/main/all_needed_image/1.5.png)
@@ -71,7 +71,7 @@ In addition to the basic PageRank algorithm, you need to implement the Block-Str
 
 ![image](https://github.com/MIKUOOHASHI/WebBigDataMining/blob/main/all_needed_image/1.7.png)
 
-6.	实验结果
+6 实验结果
   6.1 alpha取值相同，分块不同
   
   ![image](https://github.com/MIKUOOHASHI/WebBigDataMining/blob/main/all_needed_image/1.8.png)
@@ -113,7 +113,7 @@ In this project, you need to report the predicted rating scores of the unknown p
 2）测试集 测试集 test.txt 文件中所包含的用户数，评分记录以及项目数量等统计信息 如表所示。
 
 4 算法细节   
-1)读取磁盘上测试集 test.txt 文件，获取 user 和要预测 user 评分的 items；
+1)读取磁盘上测试集 test.txt 文件，获取 user 和要预测 user 评分的 items；  
 2)获取 user 之后，在训练集中得到每个 user 曾评分过的 items，它们是用于 计算预测分数的相似项； 
 
 5 实验结果
