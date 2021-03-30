@@ -1,7 +1,7 @@
-# Web大数据挖掘作业
+# Web大数据挖掘项目
 ## 目录
-作业一：Compute the PageRank scores on the Wikipedia dataset  
-作业二：Predict the rating scores of the pairs (u, i) in the Test.txt file
+项目一：Compute the PageRank scores on the Wikipedia dataset  
+项目二：Predict the rating scores of the pairs (u, i) in the Test.txt file
 
 ## 写在前面
 1、如果需要作业细节，请联系作者获取。  
@@ -9,7 +9,7 @@
 3、添加作者请备注来源(github)
 
 ---------------------------------
-## 作业一：
+## 项目一：
 ### 描述：
 Dataset: WikiData.txt  
 The format of the lines in the file is as follow:   
@@ -78,7 +78,7 @@ In addition to the basic PageRank algorithm, you need to implement the Block-Str
 ......
 
 ---------------------------------------
-## 作业二：
+## 项目二：
 ### 描述：
 Dataset:   
         (1)Train.txt, which is used for training your models.  
