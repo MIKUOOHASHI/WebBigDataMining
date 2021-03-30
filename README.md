@@ -4,7 +4,7 @@
 项目二：Predict the rating scores of the pairs (u, i) in the Test.txt file
 
 ## 写在前面
-1、如果需要作业细节，请联系作者获取。  
+1、如果需要项目细节，请联系作者获取。  
 2、作者联系方式(WeChat)：[联系作者](https://github.com/MIKUOOHASHI/WebBigDataMining/blob/main/all_needed_image/contact-author.py)  
 3、添加作者请备注来源(github)
 
